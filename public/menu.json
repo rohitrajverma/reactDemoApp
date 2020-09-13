@@ -1,0 +1,18 @@
+[
+    {
+        "menuLink": "/",
+        "menuLabel": "Home"
+    },
+    {
+        "menuLink": "/products",
+        "menuLabel": "Products"
+    },
+    {
+        "menuLink": "/checkout/1000?email=test@mail.com",
+        "menuLabel": "Checkout"
+    },
+    {
+        "menuLink": "/test",
+        "menuLabel": "404 Error"
+    }
+]
