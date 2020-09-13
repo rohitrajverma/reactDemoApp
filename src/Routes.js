@@ -2,7 +2,6 @@ import React from "react";
 import { Route, Switch } from "react-router-dom";
 // import ProductList from "./containers/ProductList";
 import Demo from "./Demo";
-import Checkout from "./containers/Checkout";
 import ErrorPage from "./components/ErrorPage";
 import CheckoutForm from "./containers/CheckoutForm";
 import Login from "./containers/Login";
