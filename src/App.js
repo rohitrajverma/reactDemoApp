@@ -17,7 +17,7 @@ class App extends React.Component {
   render() {
     // let { currencyCode } = this.state;
     return (
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <ThemeContext.Provider value={this.state.darkMode}>
           <Header>
             <ThemeSwitch

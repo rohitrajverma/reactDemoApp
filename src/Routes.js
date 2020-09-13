@@ -1,5 +1,5 @@
 import React from "react";
-import { HashRouter, Route, Switch } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 // import ProductList from "./containers/ProductList";
 import Demo from "./Demo";
 import ErrorPage from "./components/ErrorPage";
@@ -11,10 +11,9 @@ const LazyProductList = React.lazy(() => import("./containers/ProductList"));
 
 function AppRouter(props) {
   return (
-    <main role="main" class="mb-5">
+    <main role="main" className="mb-5">
       <div className="container-fluid">
         <React.Suspense fallback={<div>Loading...</div>}>
-        <HashRouter basename='/'>
           <Switch>
             <Route path="/" component={Demo} exact={true} />
             <Route path="/login" component={Login} />
@@ -25,7 +24,6 @@ function AppRouter(props) {
             />
             <Route component={ErrorPage} />
           </Switch>
-          </HashRouter>
         </React.Suspense>
       </div>
     </main>
