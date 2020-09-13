@@ -2,6 +2,7 @@ import React from "react";
 import Axios from "axios";
 import Menu from "../components/Menu";
 import { ThemeContext } from "../context";
+import { NavLink } from "react-router-dom";
 
 class Header extends React.Component {
   static contextType = ThemeContext;
@@ -28,9 +29,9 @@ class Header extends React.Component {
       : "navbar-light bg-light";
     return (
       <nav className={"navbar navbar-expand-lg " + theme}>
-        <a className="navbar-brand" href="#">
+        <NavLink className="navbar-brand" to='#'>
           My APP
-        </a>
+        </NavLink>
         <button
           className="navbar-toggler"
           type="button"

@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, Switch } from "react-router-dom";
+import { HashRouter, Route, Switch } from "react-router-dom";
 // import ProductList from "./containers/ProductList";
 import Demo from "./Demo";
 import ErrorPage from "./components/ErrorPage";
@@ -14,6 +14,7 @@ function AppRouter(props) {
     <main role="main" class="mb-5">
       <div className="container-fluid">
         <React.Suspense fallback={<div>Loading...</div>}>
+        <HashRouter basename='/'>
           <Switch>
             <Route path="/" component={Demo} exact={true} />
             <Route path="/login" component={Login} />
@@ -24,6 +25,7 @@ function AppRouter(props) {
             />
             <Route component={ErrorPage} />
           </Switch>
+          </HashRouter>
         </React.Suspense>
       </div>
     </main>

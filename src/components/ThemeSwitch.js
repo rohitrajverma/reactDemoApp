@@ -13,7 +13,7 @@ function ThemeSwitch(props) {
   });
 
   return (
-    <a
+    <span
       className="mx-2"
       style={{ cursor: "pointer" }}
       onClick={() => {
@@ -26,7 +26,7 @@ function ThemeSwitch(props) {
       ) : (
           <i className="far fa-sun fa-2x text-white"></i>
         )}
-    </a>
+    </span>
   );
 
   // return (
