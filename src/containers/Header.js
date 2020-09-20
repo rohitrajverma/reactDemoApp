@@ -14,7 +14,7 @@ class Header extends React.Component {
   }
 
   getMenuData() {
-    Axios.get("/menu.json")
+    Axios.get(`${process.env.PUBLIC_URL}/menu.json`)
       .then((res) => {
         this.setState({ menuList: res.data });
       })
