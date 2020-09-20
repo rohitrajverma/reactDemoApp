@@ -11,7 +11,7 @@ class Demo extends React.Component {
 
   render() {
     console.log("render called", this.state);
-    const name = "Mike";
+    const name = "Rohit";
     return (
       <div className="row">
         <Column colSize={1}>
